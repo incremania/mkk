@@ -1,0 +1,262 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+   background-color: #858e96;
+   background-color:  hsl(210, 36%, 96%);
+   color: hsl(205, 86%, 17%);
+}
+.logo-toggle-div {
+ padding: 1rem 2rem;
+ display: flex;
+ justify-content: space-between;
+ box-shadow: 0 0 3px rgb(143, 139, 139);
+}
+
+.about, .about-oil{
+    text-decoration: underline;
+}
+
+p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.promo-h1 {
+    color:  hsl(209, 61%, 16%);
+    text-decoration: underline;
+    animation: animate 2s linear infinite;
+}
+.contact-link {
+    text-align: center;
+    word-spacing: 3rem;
+}
+.homepage-img-div {
+    width: 100%;
+}
+
+.homepage-img {
+    width: inherit;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.9;
+      }
+      100%{
+        opacity: 0;
+      }
+}
+
+
+.logo {
+    font-size: 22px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.link {
+    color: #447722;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #447722;
+}
+
+.my-container {
+    transform: translate(-100%);
+    transition: all 0.4s linear ;
+    line-height: 2;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    box-shadow: 0 0 3px rgb(143, 139, 139);
+    padding-top: 1rem;
+}
+
+
+.fa-times-div {
+   text-align: right;
+   margin-right: 10px;
+}
+.show-link {
+    transform: translate(0);
+}
+
+li {
+    margin-top: .5rem;
+}
+
+section {
+    padding: 1rem 1rem;
+}
+
+.head {
+    text-align: center;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.mynavbar {
+    background-color: #000;
+}
+
+video {
+    width: 90%;
+    margin-top: 2rem;
+    background-color: white;
+    margin-left: 5%
+
+}
+
+.fa-times {
+    display: block;
+    color: #447722;
+}
+
+.first-section {
+    /* position: absolute;
+    margin-top: -1rem; */
+
+    background: url('./images/home-test.jpg');
+    height: 83vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@media screen and (min-width: 700px) {
+
+    .my-container {
+        transform: translate(0); 
+        position: relative;
+        box-shadow: none;
+        line-height: 0;
+        margin: 0;
+        background-color: #000;
+    }
+    .logo-toggle-div {
+        box-shadow: none;
+    }
+    .fa-times {
+        display: none;
+        color: #000;
+    }
+    .fa-bars {
+        display: none;
+    }
+
+    .mynavbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+
+    }
+
+    .lists {
+        display: flex;
+        margin-left: 5rem;
+    }
+    .list:nth-of-type(2) {
+        margin-top: 0;
+    }
+    
+    
+    .navbar-div {
+    padding: 0 2rem;
+    background-color: black;
+    box-shadow: 0 0 3px rgb(143, 139, 139);
+    
+    }
+    
+    .list:nth-of-type(1) {
+        margin-right: 2rem;
+    }
+
+    .link {
+        color: white;
+    }
+   
+
+    
+}
+
+
+/* count down timer */
+
+.gift-img {
+    margin-bottom: 2rem;
+  }
+  .gift-info h3 {
+    text-transform: uppercase;
+    color: var(--clr-primary-3);
+  }
+  .gift-info p {
+    color: var(--clr-grey-6);
+  }
+  .date {
+    color: var(--clr-grey-5);
+    font-size: 0.85rem;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      gap: 3rem;
+      width: 95vw;
+    }
+    .gift-img {
+      margin-bottom: 0;
+    }
+  }
+  .gift-info p {
+    margin: 2rem 0;
+  }
+  .deadline {
+    display: flex;
+  }
+  .deadline-format {
+    background: hsl(209, 61%, 16%);
+    color: #fff;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  .deadline-format span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+  }
+  .deadline h4:not(.expired) {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: var(--spacing);
+  }
+  
